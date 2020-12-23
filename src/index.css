@@ -1,3 +1,57 @@
-body {
-  background-color: whitesmoke;
+ body{
+  animation:bgc 7s linear 1s infinite alternate;
+  background-size: cover;
+} 
+@keyframes bgc{
+  0%{
+      /* background-color:  rgb(78, 78, 78); */
+      background-image: url("./assets/okayu.png");
+  }
+  25%{
+      /* background-color: rgb(34, 34, 34); */
+      background-image: url("./assets/okayu.png");
+  }
+  50%{
+      /* background-color: rgb(37, 36, 49); */
+      background-image: url("./assets/kanata.png");
+  }
+  100%{
+      /* background-color: rgb(51, 57, 88); */
+      background-image: url("./assets/kanata.png");
+  }
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px rgb(109, 12, 27), 0 0 30px #dd226a, 0 0 40px #8f103a, 0 0 50px #972743, 0 0 60px #c93b76, 0 0 70px #ff2e6d;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fa73ff, 0 0 40px #ff7af4, 0 0 50px #7f0ca1, 0 0 60px #a00493, 0 0 70px #b80c92, 0 0 80px #ac09a3;
+  }
+}
+.small-glow {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  -webkit-animation: small-glow 1s ease-in-out infinite alternate;
+  -moz-animation: small-glow 1s ease-in-out infinite alternate;
+  animation: small-glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes small-glow {
+  from {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fa73ff, 0 0 40px #ff7af4, 0 0 50px #7f0ca1, 0 0 60px #a00493, 0 0 70px #b80c92, 0 0 80px #ac09a3;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px rgb(109, 12, 27), 0 0 30px #dd226a, 0 0 40px #8f103a, 0 0 50px #972743, 0 0 60px #c93b76, 0 0 70px #ff2e6d;
+  }
 }
