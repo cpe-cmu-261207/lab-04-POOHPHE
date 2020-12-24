@@ -9,7 +9,7 @@ export const CourseCard = (value,func) => {
   return (
     <TableRow key={value.id}>
 
-                        <TableCell align="center">{value.name}</TableCell>
+                        <TableCell align="left">{value.name}</TableCell>
                         <TableCell align="center">{value.subId}</TableCell>
                         <TableCell align="center">{value.gpa}</TableCell>
                         <TableCell align="center">{value.credit}</TableCell>
