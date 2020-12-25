@@ -1,5 +1,5 @@
  body{
-  animation:bgc 7s linear 1s infinite alternate;
+  animation:bgc 7s linear 0s infinite alternate;
   background-size: cover;
 } 
 @keyframes bgc{
